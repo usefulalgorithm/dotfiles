@@ -22,7 +22,8 @@ map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
 nnoremap <C-N> :set invnumber<CR> 
 set pastetoggle=<F10>
-" Cscope magic                                                                                                               [67/247]
+
+" Cscope magic
 if has('cscope')
   set cscopetag
 
