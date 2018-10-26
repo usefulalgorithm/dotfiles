@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# Specify Ceph version
+version="luminous"
+
+# Setup new environment
 yum install -y sudo epel-release bash-completion vim net-tools wget sysstat git lshw gcc gcc-g++ libstdc++-devel
 # yum install scl-utils centos-release-scl devtoolset-7 boost;\
 curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
