@@ -4,7 +4,7 @@
 version="luminous"
 
 # Setup new environment
-yum install -y sudo epel-release bash-completion vim net-tools wget sysstat git lshw gcc gcc-g++ libstdc++-devel lsof mdadm
+yum install -y sudo epel-release bash-completion vim net-tools wget sysstat git lshw gcc gcc-g++ libstdc++-devel lsof mdadm bc
 # yum install scl-utils centos-release-scl devtoolset-7 boost;\
 curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 echo "source ~/.git-prompt.sh" >> ~/.bashrc
