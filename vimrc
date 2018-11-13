@@ -63,3 +63,8 @@ nmap ze :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap zf :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap zi :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap zd :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+set foldmethod=syntax
+set foldlevelstart=20
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+vnoremap <Space> zf
