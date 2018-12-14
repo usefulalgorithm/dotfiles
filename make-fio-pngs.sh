@@ -18,6 +18,7 @@
 #
 #      for $i in `echo log directories`; do ./make-fio-pngs.sh $i (png directory); done
 #
+#
 #  You can also create custom names (that contain white spaces) for your pngs:
 #
 #      ./make-fio-pngs.sh (log directory) (png directory) (a nice title for your plot)
