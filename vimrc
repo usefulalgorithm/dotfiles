@@ -96,8 +96,8 @@ nnoremap <F9> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 nmap <F2> :NERDTreeToggle<CR>
 nmap <tab> :bnext<CR>
 nmap <S-tab> :bprevious<CR>
-nmap <leader>bl :ls<CR>
-nmap <leader>bq :bp <BAR> bd #<CR>
+nmap <leader>l :ls<CR>
+nmap <leader>q :bp <BAR> bd #<CR>
 nnoremap <Leader>1 :1b<CR>
 nnoremap <Leader>2 :2b<CR>
 nnoremap <Leader>3 :3b<CR>
