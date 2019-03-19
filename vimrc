@@ -13,6 +13,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'ap/vim-buftabline'
+Plug 'majutsushi/tagbar'
 call plug#end()
 
 set t_Co=16
@@ -108,3 +109,5 @@ nnoremap <Leader>7 :7b<CR>
 nnoremap <Leader>8 :8b<CR>
 nnoremap <Leader>9 :9b<CR>
 nnoremap <Leader>0 :10b<CR>
+
+nmap <F8> :TagbarToggle<CR>
