@@ -9,8 +9,8 @@ Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
-# If you don't need Airline features, use Lightline instead
-#Plug 'itchyny/lightline.vim'
+" If you don't need Airline features, use Lightline instead
+"Plug 'itchyny/lightline.vim'
 Plug 'powerline/fonts'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -20,6 +20,7 @@ Plug 'ap/vim-buftabline'
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
+Plug 'Chiel92/vim-autoformat'
 call plug#end()
 
 set t_Co=256
@@ -146,3 +147,10 @@ let g:airline_theme='molokai'
 let g:airline#extensions#branch#enabled = 1 
 
 let g:airline#extensions#ale#enabled = 1
+let g:ale_sign_error = '✗' 
+let g:ale_sign_warning = '⚡'
+
+" Needs stylish haskell, so remember to do `stack install stylish-haskell`
+autocmd BufWrite *.hs :Autoformat
+" Don't automatically indent on save, since vim's autoindent for haskell is buggy
+autocmd FileType haskell let b:autoformat_autoindent=0
