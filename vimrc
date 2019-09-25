@@ -9,14 +9,14 @@ Plug 'tpope/vim-surround'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
-" If you don't need Airline features, use Lightline instead
+" If you don't need Airline features, use Lightline and buftabline instead
 "Plug 'itchyny/lightline.vim'
+"Plug 'ap/vim-buftabline'
 Plug 'powerline/fonts'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'ap/vim-buftabline'
 Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
@@ -36,7 +36,6 @@ set autoindent
 set nostartofline
 set ignorecase
 set smartcase
-set ruler
 set confirm
 set visualbell
 set backspace=indent,eol,start
