@@ -49,6 +49,18 @@ nnoremap <C-L> :nohl<CR><C-L>
 nnoremap <C-N> :set invnumber<CR> 
 set pastetoggle=<F10>
 
+" ======= UNDO =======
+set undofile                " Save undos after file closes
+set undodir=$HOME/.vim/undo " where to save undo histories
+set undolevels=1000         " How many undos
+set undoreload=10000        " number of lines to save for undo
+if has("persistent_undo")
+  if !isdirectory(&undodir)
+    silent call system('mkdir -p ' . &undodir)
+  endif
+endif
+" ===================
+
 " Uncomment the following to have Vim jump to the last position when                                                       
 " reopening a file
 if has("autocmd")
