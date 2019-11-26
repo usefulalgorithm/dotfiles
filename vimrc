@@ -21,6 +21,9 @@ Plug 'majutsushi/tagbar'
 Plug 'mattn/emmet-vim'
 Plug 'w0rp/ale'
 Plug 'Chiel92/vim-autoformat'
+Plug 'easymotion/vim-easymotion'
+Plug 'haya14busa/incsearch.vim'
+Plug 'haya14busa/incsearch-fuzzy.vim'
 call plug#end()
 
 set t_Co=256
@@ -31,7 +34,6 @@ syntax on
 set wildmenu
 set showcmd
 set hlsearch
-set incsearch
 set autoindent
 set nostartofline
 set ignorecase
@@ -165,3 +167,13 @@ let g:ale_sign_warning = '⚡'
 autocmd BufWrite *.hs :Autoformat
 " Don't automatically indent on save, since vim's autoindent for haskell is buggy
 autocmd FileType haskell let b:autoformat_autoindent=0
+
+" ======= INCSEARCH.vim =======
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+" === INCSEARCH-FUZZY.vim =====
+map z/ <Plug>(incsearch-fuzzy-/)
+map z? <Plug>(incsearch-fuzzy-?)
+map zg/ <Plug>(incsearch-fuzzy-stay)
+" =============================
