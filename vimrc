@@ -24,6 +24,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
+Plug 'konfekt/fastfold'
 call plug#end()
 
 set t_Co=256
@@ -176,4 +177,8 @@ map g/ <Plug>(incsearch-stay)
 map z/ <Plug>(incsearch-fuzzy-/)
 map z? <Plug>(incsearch-fuzzy-?)
 map zg/ <Plug>(incsearch-fuzzy-stay)
+" ======= FASTFOLD.vim ========
+nmap zuz <Plug>(FastFoldUpdate)
+let g:fastfold_savehook = 1 
+let g:fastfold_fold_command_suffixes =  ['x','X','a','A','o','O','c','C']
 " =============================
