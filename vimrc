@@ -43,7 +43,7 @@ set confirm
 set visualbell
 set backspace=indent,eol,start
 "set cmdheight=2
-set number
+set number relativenumber
 set shiftwidth=2
 set softtabstop=2
 set expandtab
@@ -181,4 +181,6 @@ map zg/ <Plug>(incsearch-fuzzy-stay)
 nmap zuz <Plug>(FastFoldUpdate)
 let g:fastfold_savehook = 1 
 let g:fastfold_fold_command_suffixes =  ['x','X','a','A','o','O','c','C']
+" =========== MISC ============
+highlight LineNr term=bold cterm=NONE ctermfg=Grey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 " =============================
